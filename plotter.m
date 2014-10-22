@@ -1,9 +1,14 @@
 function plotter(s,i,b)
     clf
     hold on
-    plot(s, 'LineWidth', 2)
-    %plot(i)
-    %plot(b)
+    
+    C1 = [.5, .5, .5];
+    C2 = [.2, .1, .4];
+    C3 = [.3, .6, .2];
+    
+    plot(s, 'LineWidth', 2,'Color',C1)
+    plot(i, 'LineWidth',2,'Color',C2)
+    plot(b, 'LineWidth',2, 'Color',C3)
     
     xlabel('Time (hours) ');
     ylabel('Concentration (%)');
