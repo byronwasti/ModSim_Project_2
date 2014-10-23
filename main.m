@@ -1,18 +1,18 @@
 function main()
     
-    stop = 35;
+    stop = 12;
     s = zeros(stop,1);  % Stomach vector setup
     m = zeros(stop,1);  % Small Intestine vector setup
     b = zeros(stop,1);  % Blood vector setup
    
-    s(1) = 25;
+    s(1) = 24;
     for i = 1:stop
         s(i+1) = s(i) - sdiff(s(i),m(i),b(i));
         m(i+1) = m(i) - idiff(s(i),m(i),b(i));
     end
     
     function res = sdiff(s,m,b)
-        alpha = .08;
+        alpha = .1;
         res = s*alpha;
     end
 

@@ -2,7 +2,12 @@ function plotter(s,i,b)
     clf
     hold on
     load DataIbu.csv;
-    plot(DataIbu(:,1), DataIbu(:,2), 'LineWidth', 2);
+    load FastingData.csv;
+    load AfterMealData.csv;
+    %plot(DataIbu(:,1), DataIbu(:,2), 'LineWidth', 2);
+    plot(FastingData(:,1), FastingData(:,2), 'b', 'LineWidth', 2);
+    plot(AfterMealData(:,1), AfterMealData(:,2), 'r', 'LineWidth', 2);
+    
     hold on;
     
     C1 = [.5, .5, .5];
@@ -16,6 +21,6 @@ function plotter(s,i,b)
     xlabel('Time (hours) ');
     ylabel('Concentration (mg/L)');
     title('Ibuprofen Absorption and Elimination');
-    legend('Experimental Data', 'Stomach', 'Small Intestine', 'Blood Conc');
+    legend('Fasting Data', 'After Meal Data', 'Stomach', 'Small Intestine', 'Blood Conc');
     
 end
