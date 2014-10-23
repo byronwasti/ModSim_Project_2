@@ -24,5 +24,5 @@ function main()
         res = 0;
     end
         
-    plotter(s,m,b);
+    plotter(s,1,m,0,b,0); % 1 is plot, 0 is not plot
 end
