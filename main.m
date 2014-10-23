@@ -1,7 +1,7 @@
 function main()
 
     stop = 24;
-    test = 1;
+    test = 10;
     s = zeros(stop,1);  % Stomach vector setup
     m = zeros(stop,1);  % Small Intestine vector setup
     b = zeros(stop,1);  % Blood vector setup
