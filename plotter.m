@@ -1,6 +1,9 @@
 function plotter(s,i,b)
     clf
     hold on
+    load DataIbu.csv;
+    plot(DataIbu(:,1), DataIbu(:,2), 'LineWidth', 2);
+    hold on;
     
     C1 = [.5, .5, .5];
     C2 = [.2, .1, .4];
