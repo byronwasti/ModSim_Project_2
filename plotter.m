@@ -14,7 +14,8 @@ function plotter(s,i,b)
     plot(b, 'LineWidth',2, 'Color',C3)
     
     xlabel('Time (hours) ');
-    ylabel('Concentration (%)');
+    ylabel('Concentration (mg/L)');
     title('Ibuprofen Absorption and Elimination');
+    legend('Experimental Data', 'Stomach', 'Small Intestine', 'Blood Conc');
     
 end

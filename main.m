@@ -1,6 +1,5 @@
 function main()
     
-    
     stop = 35;
     s = zeros(stop,1);  % Stomach vector setup
     m = zeros(stop,1);  % Small Intestine vector setup
