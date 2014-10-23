@@ -24,5 +24,5 @@ function main()
         res = 0;
     end
         
-    plotter(s,m,b);
+    plotter(s,1,m,1,b,1); % Adding partial plotting functionality
 end
