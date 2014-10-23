@@ -1,7 +1,6 @@
 function main()
 
     stop = 24;
-    
     s = zeros(stop,1);  % Stomach vector setup
     m = zeros(stop,1);  % Small Intestine vector setup
     b = zeros(stop,1);  % Blood vector setup
@@ -27,5 +26,5 @@ function main()
         res = 0;
     end
         
-    plotter(s,m,b);
+    plotter(s,1,m,0,b,0); % 1 is plot, 0 is not plot
 end
