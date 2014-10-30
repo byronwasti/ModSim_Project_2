@@ -7,7 +7,7 @@ function plotter(s,tf1,i,tf2,b,tf3)
     %plot(DataIbu(:,1), DataIbu(:,2), 'LineWidth', 2);
     plot(FastingData(:,1), FastingData(:,2), 'b', 'LineWidth', 2);
     plot(AfterMealData(:,1), AfterMealData(:,2), 'r', 'LineWidth', 2);
-    
+
     hold on;
     
     C1 = [.5, .5, .5];
@@ -23,7 +23,7 @@ function plotter(s,tf1,i,tf2,b,tf3)
     if tf3 == 1
         plot(b, 'LineWidth',2, 'Color',C3)
     end
-    
+
     xlabel('Time (hours) ');
     ylabel('Concentration (mg/L)');
     title('Ibuprofen Absorption and Elimination');
