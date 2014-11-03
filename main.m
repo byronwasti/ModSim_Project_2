@@ -8,6 +8,7 @@ function main()
     s(1) = 25;
     b(1) = 25;
 
+
     for i = 1:stop
         s(i+1) = s(i) + sdiff(s(i),m(i),b(i));
         m(i+1) = m(i) + idiff(s(i),m(i),b(i));
@@ -15,10 +16,7 @@ function main()
     end
     
     function res = sdiff(s,m,b)
-
-%         alpha = 0.08;
-%         res = s*alpha;
-          res = 0;
+          res = 1/pf * s;
 
     end
 
